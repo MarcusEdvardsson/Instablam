@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(white, lightpink);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Lobster Two', cursive;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#fdf497, #d6249f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.camera {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.screenshot {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.button {
+    border-radius: 100rem;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #fdf497, #d6249f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    margin-bottom: 2rem;
+    font-variant: small-caps;
+}
+  
+.button:hover {
+    box-shadow: none;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 40%;
+    width: 40%;
+}
+
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.filter-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+}
+
+/* .filteradd {
+    background: lightgreen;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 50%;
+}
+
+.filterremove {
+    background: lightcoral;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 50%;
+} */
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .camera {
+      width: 30%;
+      height: 30%;
+    }
+
+    .screenshot {
+        width: 30%;
+        height: 30%;
+    }
+
+    .filter-wrapper {
+        width: 30%;
+        height: 30%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Marcus Instablam",
+    "short_name": "Instablam",
+    "start_url": "/",
+    "background_color": "#000",
+    "theme_color": "#000",
+    "orientation": "any",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en-US",
+    "description": "Instablam by Marcus",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "images/sun128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "images/sun512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

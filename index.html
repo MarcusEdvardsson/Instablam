@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="128x128" href="images/sun128x128.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/sun32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/sun16x16.png">
+    <meta name="theme-color" content="#000">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <title>Instablam</title>
+</head>
+<body>
+    <section class="wrapper">
+        <h1 class="header">Instablam</h1>
+            <video id="me" class="camera"></video>
+            <button id="takePhoto" class="button">Ta en bild</button>
+            <img src="" id="photo">
+        <div class="filter-wrapper hide" id="wrap">
+            <div class="filters">
+                <img src="./images/criss-cross.png" alt="criss-cross" class="filterremove brightness-remove filterbutton">
+                <span class="filter-text">Brightness</span>
+                <img src="./images/plus.png" alt="plus" class="filteradd brightness-add filterbutton">
+            </div>
+            <div class="filters">    
+                <img src="./images/criss-cross.png" alt="criss-cross" class="filterremove saturation-remove filterbutton">
+                <span class="filter-text">Saturation</span>
+                <img src="./images/plus.png" alt="plus" class="filteradd saturation-add filterbutton">
+            </div>
+            <div class="filters">
+                <img src="./images/criss-cross.png" alt="criss-cross" class="filterremove contrast-remove filterbutton">
+                <span class="filter-text">Contrast</span>
+                <img src="./images/plus.png" alt="plus" class="filteradd contrast-add filterbutton">
+            </div>
+            <div class="filters">
+                <img src="./images/criss-cross.png" alt="criss-cross" class="filterremove vibrance-remove filterbutton">
+                <span class="filter-text">Vibrance</span>
+                <img src="./images/plus.png" alt="plus" class="filteradd vibrance-add filterbutton">
+            </div>
+        </div>
+        <button class="button hide" id="reset">Remove Filters</button>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
